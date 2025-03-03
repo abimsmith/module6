@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abi's Birding Adventures</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav main"
+                "nav aside"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        header { grid-area: header; }
+        nav { grid-area: nav; }
+        main { grid-area: main; }
+        aside { grid-area: aside; }
+        footer { grid-area: footer; }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>🐦 Abi's Birding Adventures 🐦</h1>
+        </header>
+
+        <nav>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Abi_Bird_Facts.html">Abi & Duck Facts</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Welcome!</h2>
+            <p>Hi my name is Abigail Smith, and I am a budding birder! Please, peruse my birding gallery and fun facts about birding and me!</p>
+            
+            <section class="image-section">
+                <h2>Abi and Birds in the Wild</h2>
+                <div class="image-container">
+                    <img src="images/ducks.png" alt="A colorful bird" class="bird-image">
+                    <img src="images/abibirding.jpg" alt="Another bird" class="bird-image">
+                    <img src="images/stork.png" alt="A majestic bird" class="bird-image">
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h2>My Birding Journey</h2>
+            <p>In 2024 I decided to pick up birding! I recently have been going to birding groups and went birding in New Orleans! My friends and I all met in our community band and decided to try birding. Now, I have a world filled with music and birds!</p>
+            <h2>Press Space to Make the Bird Soar!</h2>
+            <div id="gameArea">
+                <div id="bird" class="bird"></div>
+            </div>
+        </aside>
+
+        <footer>
+            <p>Happy Bird Day! 💖</p>
+            <p>&copy; 2025 Happy Bird Day</p>
+        </footer>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
